@@ -9,26 +9,46 @@
 
 <body>
 
-	<!--
-	<div id="test-id">
-		<p> Sample text. </p>
+	<div id="overlay">
+
+		<!--
+			<div class="dropdown">
+			 <button id="input-button" onclick="deadlyItems()" class="dropbtn">Dropdown</button>
+			 <div id="itemMenu" class="dropdown-content">
+				 <p> Plastic </p>
+				 <p> Trash </p>
+				 <p> Oil </p>
+			 </div>
+			</div>
+		-->
+
+		<input type="text" id="input">
+		<button id="input-button">Get item</button>
+
+	  <button id="playbutton">Click to Play!</button>
+		<p> Click Play and then type in the name of which item you want to use. </p>
+
+
+
+		<!-- <div id="oil">
+		</div> -->
+		<div>
+			<img id="drawn-menu" src="">
+		</div>
+
+		<div id="deadreef">
+		</div>
+
+		<div id="output">
+		</div>
+
 	</div>
-	-->
 
-	<div id="test-id">
+	<!-- <img id="drawn-menu" src="img/menu.jpg"> -->
 
-    <button id="playbutton">Click to Play!</button>
-
-		<p> Lorem ipsum example text here. </p>
-
-
-
-	</div>
-
-	<div id="test-id-2">
+	<div id="bkgrd">
 		<img id="bg-pic" src="img/darkocean.gif">
-
-		<!-- READ IMPORTANT. darkocean.gif is currently being displayed within this <div> called "content". We can either try to create a <div> that is displayed on top of <content> or we can figure out how to move the image to the background .css property -->
+		<!-- READ IMPORTANT. Right now, our .gif image is being stored in a <div> class instead of being linked as a background image. To get the image to appear under text, I made a second <div> that is positioned ON TOP OF the original image. The properties are #overlay and #bkgrd, and the <div> that has the button, has a z-value that places the entire div over the <div> containing the image. -->
 	</div>
 
 </body>
