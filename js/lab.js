@@ -26,6 +26,17 @@
 
  });
 
+oilEl = document.getElementById("oil");
+oilEl.addEventListener("click", function(){
+  console.log("test")
+  var newText = "<p>You have chosen oil. This is terrible. The reef has been polluted and living things have been hurt by your actions. </p>";
+  var destroyedReef = "img/deadreef.jpg";
+
+  document.getElementById("output").innerHTML = newText;
+})
+
+
+
 //takes user input and returns requested item
 function deadlyItems(str) {
   word = str;
