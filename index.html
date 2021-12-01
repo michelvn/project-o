@@ -1,33 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Project O</title>
 	<link rel="stylesheet" type="text/css" href="css/lab.css">
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script src="js/lab.js" defer></script>
 </head>
 
 <body>
-
 	<div id="overlay">
 
-		<!--
-			<div class="dropdown">
-			 <button id="input-button" onclick="deadlyItems()" class="dropbtn">Dropdown</button>
-			 <div id="itemMenu" class="dropdown-content">
-				 <p> Plastic </p>
-				 <p> Trash </p>
-				 <p> Oil </p>
-			 </div>
-			</div>
-		-->
-
+		<!-- Text input for selecting items -->
 		<input type="text" id="input">
 		<button id="input-button">Get item</button>
 
-	  <button id="playbutton">Click to Play!</button>
+	  <button id="play-button">Click to Play!</button>
 		<p> Click Play and then type in the name of which item you want to use. </p>
 
+		<!-- Updated button menu -->
 		<div id="wrapper">
 			<div id="center-box">
 				<button id="oil" class="button" style="position:absolute;top:75px;left:0px;height:200px"><img src="img/oil.png" width="100px"></button>
@@ -36,20 +25,17 @@
 			</div>
 		</div>
 
-		<div id="deadreef">
-		</div>
-
 		<div id="output">
 		</div>
 
 	</div>
 
-	<!-- <img id="drawn-menu" src="img/menu.jpg"> -->
-
 	<div id="bkgrd">
 		<img id="bg-pic" src="img/darkocean.gif">
 		<!-- READ IMPORTANT. Right now, our .gif image is being stored in a <div> class instead of being linked as a background image. To get the image to appear under text, I made a second <div> that is positioned ON TOP OF the original image. The properties are #overlay and #bkgrd, and the <div> that has the button, has a z-value that places the entire div over the <div> containing the image. -->
 	</div>
+
+
 
 </body>
 </html>

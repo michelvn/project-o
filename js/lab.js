@@ -4,9 +4,8 @@
  * License: Public Domain
  */
 
-
  //finds the button element
- buttonEl = document.getElementById("playbutton");
+ buttonEl = document.getElementById("play-button");
 
 //"Click to play!" button
  //detects button press
@@ -17,9 +16,8 @@
 //button menu
 oilEl = document.getElementById("oil");
 oilEl.addEventListener("click", function(){
-  var newText = "<p>You have chosen oil. This is terrible. The reef has been polluted and living things have been hurt by your actions. </p>";
 
-  document.getElementById("output").innerHTML = newText;
+  document.getElementById("output").innerHTML = "<p>You have chosen oil. This is terrible. The reef has been polluted and living things have been hurt by your actions. </p>";
   document.getElementById("bg-pic").src= "img/deadreef.jpg";
 })
 
