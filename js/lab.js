@@ -28,11 +28,22 @@
 
 oilEl = document.getElementById("oil");
 oilEl.addEventListener("click", function(){
-  console.log("test")
   var newText = "<p>You have chosen oil. This is terrible. The reef has been polluted and living things have been hurt by your actions. </p>";
-  var destroyedReef = "img/deadreef.jpg";
 
   document.getElementById("output").innerHTML = newText;
+})
+
+plasticEl = document.getElementById("plastic");
+plasticEl.addEventListener("click", function(){
+  // var newText = "<p>You have chosen plastic. This is terrible. The reef has been polluted and living things have been hurt by your actions. </p>";
+
+  document.getElementById("output").innerHTML = "<p>You have chosen plastic. This is terrible. The reef has been polluted and living things have been hurt by your actions. </p>";
+})
+
+trashEl = document.getElementById("trash");
+trashEl.addEventListener("click", function(){
+
+  document.getElementById("output").innerHTML = "<p>You have chosen trash. This is terrible. The reef has been polluted and living things have been hurt by your actions. </p>";
 })
 
 
