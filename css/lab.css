@@ -2,6 +2,18 @@ p {
   color: white;
 }
 
+body{
+  background-color: #18315e;
+}
+
+/* html {
+  background: url(img/deadreef.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} */
+
 .button{
   background-color:black;
 }
@@ -36,4 +48,9 @@ p {
 #bkgrd {
   position: absolute;
   z-index: -10;
+}
+
+#output {
+  display: inline-block;
+  width: 1000px;
 }
